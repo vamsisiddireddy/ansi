@@ -11,7 +11,7 @@
   - name: install tree
     apt: 
       name: tree
-      state: present
+      stateeee: present
     tags: mytree
 
   - name: install wget
