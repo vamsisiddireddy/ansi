@@ -3,7 +3,7 @@
   become: yes
   tasks: 
   - name: i want to execute direct linux command
-    command: java -----version
+    command: java -----versionnn
     register: myresult
   - name: i want to display first task result 
     debug: 
