@@ -6,16 +6,14 @@
     apt: 
       name: git
       state: present
-    tags: mygit
 
   - name: install tree
     apt: 
       name: tree
       stateeee: present
-    tags: mytree
+    ignore_errors: yes
 
   - name: install wget
     apt: 
       name: wget
       state: present
-    tags: mywget
