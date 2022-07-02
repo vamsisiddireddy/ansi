@@ -17,12 +17,12 @@
 
   - name: i want to install webserver on redhat
     yum: 
-      name: httpd
+      name: apache2
       state: present
     when: ansible_os_family =="RedHat"
 
   - name: i want to restart my webserver
     service: 
-      name: httpd
+      name: apache2
       state: started
     when: ansible_os_family =="RedHat"
