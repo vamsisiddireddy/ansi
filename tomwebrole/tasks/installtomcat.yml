@@ -1,0 +1,12 @@
+---
+- name: download tomcat
+  get_url: 
+    url: wget https://archive.apache.org/dist/tomcat/tomcat-10/v10.0.8/bin/apache-tomcat-10.0.8.tar.gz
+    dest: /home/ubuntu/apache-tomcat-10.0.8.tar.gz
+    force_basic_auth: yes
+
+- name: execute linux command
+  command: 
+    cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-10.0.8.tar.gz
+    creates: opt/tomcat/LICENSE
+    

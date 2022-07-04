@@ -1,0 +1,6 @@
+---
+- name: change owner
+  command: sudo chown -R www-data:www-data /opt/tomcat/
+
+- name: cange present
+  command: sudo chmod -R 755 /opt/tomcat/
